@@ -1,12 +1,20 @@
 {
   "name": "loop-pipe",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.2",
+  "description": "loop over piped data.",
+  "bin": {
+    "lp": "index.js",
+    "loop-pipe": "index.js"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cat list.txt | node index.js \"echo {v} is in location {i}\""
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "execa": "^4.0.0",
+    "minimist": "^1.2.0"
+  }
 }
