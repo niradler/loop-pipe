@@ -16,5 +16,14 @@
   "dependencies": {
     "execa": "^4.0.0",
     "minimist": "^1.2.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niradler/loop-pipe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/niradler/loop-pipe/issues"
+  },
+  "homepage": "https://github.com/niradler/loop-pipe#readme"
 }
