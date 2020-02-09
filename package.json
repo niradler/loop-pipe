@@ -14,7 +14,7 @@
     "pipe",
     "loop"
   ],
-  "author": "",
+  "author": "Nir Adler",
   "license": "MIT",
   "dependencies": {
     "execa": "^4.0.0",
