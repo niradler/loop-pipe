@@ -10,7 +10,10 @@
   "scripts": {
     "test": "cat list.txt | node index.js \"echo {v} is in location {i}\""
   },
-  "keywords": [],
+  "keywords": [
+    "pipe",
+    "loop"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
