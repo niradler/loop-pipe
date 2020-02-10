@@ -1,6 +1,6 @@
 {
   "name": "loop-pipe",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "loop over piped data.",
   "bin": {
     "lp": "index.js",
