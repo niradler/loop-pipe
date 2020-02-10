@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const minimist = require("minimist");
-const execa = require("execa");
+const { execSync } = require("child_process");
 
 var _data = "";
 
@@ -33,7 +33,8 @@ function loopData(argv, data) {
     const cmd = exec.replace(/{i}/g, i).replace(/{v}/, v);
     if (dryRun || debug) console.log(cmd);
     else {
-      execa(cmd, [], { cwd: process.cwd() }).stdout.pipe(process.stdout);
+      execSync(cmd, { cwd: process.cwd(), detached: false, stdio: "inherit" });
+      // execa(cmd, [], { cwd: process.cwd() }).stdout.pipe(process.stdout);
     }
   }
 }
@@ -58,4 +59,8 @@ self.on("readable", function() {
 });
 self.on("end", function() {
   withPipe(_data);
+});
+
+process.on("SIGTERM", () => {
+  process.exit(1);
 });

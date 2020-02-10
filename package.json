@@ -17,7 +17,6 @@
   "author": "Nir Adler",
   "license": "MIT",
   "dependencies": {
-    "execa": "^4.0.0",
     "minimist": "^1.2.0"
   },
   "devDependencies": {},
