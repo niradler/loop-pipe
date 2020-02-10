@@ -34,7 +34,6 @@ function loopData(argv, data) {
     if (dryRun || debug) console.log(cmd);
     else {
       execSync(cmd, { cwd: process.cwd(), detached: false, stdio: "inherit" });
-      // execa(cmd, [], { cwd: process.cwd() }).stdout.pipe(process.stdout);
     }
   }
 }
